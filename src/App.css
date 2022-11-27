@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+}
+
+.Map {
+  margin: auto;
+  width: 600px;
+  height: 600px;
+  background-image: url('./assets/Italy.png');
+}
+
+#b1 {
+  margin-top: 100px;
+  margin-left: 500px;
+}
+
+#b2 {
+  margin-left: 300px;
+}
+
+#b3 {
+  margin-top: 100px;
+  margin-left: 0px;
+}
+
+#b4 {
+  margin-left: 80px;
+}
+
+#b5 {
+  margin-left: -200px;
+}
+
+
+.Button {
+  margin-top: 40px;
+  border-radius: 50%;
+  padding: 5px;
+  color: Red;
+  background-color: Red;
+}
+
+.DataInfo {
+  margin: auto;
+  height: auto;
+  min-height: 100px;;
+  width: 600px;
+  border-color: black;
+  border-width: 3px;
+  border-style: solid;
+  text-align: left;
+}
+
+.InfoBar {
+  margin-top: 0px;
+}
