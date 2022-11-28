@@ -46,7 +46,9 @@ function Button({stateChanger, data}) {
 }
 
 function InfoBar({desc, isActive}) {
-  let output = JSON.stringify(desc, null)
+  let output = JSON.stringify(desc, null, '\t')
+  output = output.replace("{", '').replace("}", '')
+  output = output.replaceAll(',', ' ||')
   console.log(output)
   return (
     <div className="InfoBar">
