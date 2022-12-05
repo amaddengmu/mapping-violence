@@ -46,17 +46,18 @@ function Button({stateChanger, data}) {
 }
 
 function InfoBar({desc, isActive}) {
-  let output = JSON.stringify(desc, null, '\t')
-  output = output.replace("{", '').replace("}", '')
-  output = output.replaceAll(',', ' ||')
-  console.log(output)
+  let output = JSON.stringify(desc)
+  output = output.replace("{", '').replace("}", '').replaceAll('"', '').replaceAll(":", ": ")
+  output = output.replaceAll(", ", "!!!")
+  let dataArray = output.split(",")
+  
+  const listData = dataArray.map((element) => 
+    <li>{element.replaceAll("!!!", ", ")}</li>
+  );
+
   return (
     <div className="InfoBar">
-      {isActive ? (
-        <p>{output}</p>
-      ) : (
-        <p>Click on a point to view is data here</p>
-      )}
+      <div>{listData}</div>
     </div>
   );
 }
