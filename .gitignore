@@ -1,15 +1,16 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Sensible Python defaults: https://github.com/github/gitignore/blob/main/Python.gitignore 
 
 # dependencies
-/node_modules
-/.pnp
+node_modules/
+.pnp/
 .pnp.js
 
 # testing
-/coverage
+coverage/
 
 # production
-/build
+build/
 
 # misc
 .DS_Store
@@ -21,3 +22,18 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# django / python specific
+.env
+.venv
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+## Python installer logs
+pip-log.txt
+pip-delete-this-directory.txt
