@@ -7,7 +7,7 @@ This repository contains code, documentation, and related resources for the Mapp
 To create your Django environment, navigate to the mvproject directory and do the following: 
 
 ```sh
-% cd mapping-violence
+% cd mvproject
 % python3 -m venv .venv
 % source .venv/bin/activate
 (.venv) % python3 -m pip install requirements.txt
