@@ -1,73 +1,27 @@
 import './App.css';
-import {useState, useEffect} from 'react';
-import React from 'react'
-import { API_URL } from "./constants";
-import axios from "axios";
+import React from 'react';
+import Map from './Map.jsx';
 
-function App() {
-  const [description, setDescription] = useState('Click on a point to view is data here');
-  const [active, setActive] = useState(true)  
-  const [posts, setPosts] = useState([]);
-
-  useEffect(() => {
-    axios.get(API_URL)
-    .then(res => setPosts(res.data))
-    .catch(err => console.log(err));
-  }, [])
-
-  const buttons = posts.map(data => {
-    return (
-      <div id={"b" + data.id}>
-        <Button stateChanger={setDescription} data={data}/>
-      </div>
-    )
-  })
-
+export default function App() {
   return (
-    <div className="App">
-      <header className='header'>
-        <p>GMU History Dept. Mapping Volience In Italy</p>
-      </header>
-      <div className="Map">
-        <div id="italyImg"/>
-          <div>{buttons}</div>
-        </div>    
-      <div className='DataInfo'>
-        <InfoBar isActive={active === true} desc={description}/>
-      </div>
-    </div>
-  );
-}
-
-function Button({stateChanger, data}) {
-  return (
-    <button className='Button' onClick={event => {stateChanger(data)}}></button> 
+    <main className='Main'>
+      <Map/>
+    </main>
   )
 }
 
-function InfoBar({desc, isActive}) {
-  let output = JSON.stringify(desc)
-  output = output.replace("{", '').replace("}", '').replaceAll('"', '').replaceAll(":", ": ")
-  output = output.replaceAll(", ", "!!!")
-  let dataArray = output.split(",")
-  
-  const listData = dataArray.map((element) => 
-    <li>{element.replaceAll("!!!", ", ")}</li>
-  );
+  /*   ***Old Snippets***
 
-  return (
-    <div className="InfoBar">
-      <div>{listData}</div>
-    </div>
-  );
-}
+  const handleChange = () => ({target}) => {
+    setDescription((prev) => {
+      if (prev === target.data) {
+        return 'Click on a point to view is data here';
+      } else {
+        return target.data;
+      }
+    })
+  }
 
-export default App;
-
-
-
-
-{/*   ***Old Snippets***
 
 const handleClick = ({ target })=> {
   setDescription(target.desc)
@@ -123,4 +77,5 @@ let jsonData = [jD1, jD2, jD3];
       })
   })
 
-*/}
+*/
+
