@@ -1,0 +1,104 @@
+:root {
+  --lm-purple: rgba(186, 2, 232, 1);
+  --lm-purple-muted: rgba(186, 2, 232, 0.3);
+  --bs-body-font-family: "IBM Plex Sans", sans-serif;
+  --bs-link-color: var(--lm-purple);
+}
+
+h1.site-title {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.tagline {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: var(--lm-purple);
+  font-size: 1.25rem;
+}
+.site-authors {
+  margin-bottom: 1rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+.lede,
+.author,
+.semibold {
+  font-weight: 500;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+a,
+a:visited {
+  color: var(--lm-purple);
+}
+
+a:hover,
+a:active {
+  color: var(--lm-purple-muted);
+}
+
+.page-container {
+  max-width: 1000px;
+  margin-top: 2rem;
+}
+
+header {
+  border-bottom: 1px solid var(--lm-purple);
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+
+header p {
+  margin-bottom: 0.25rem;
+}
+
+.publication-item {
+  margin-bottom: 1rem;
+}
+
+.publication-item .img-thumbnail,
+.publication-item .video-border {
+  max-width: 100%;
+  border-color: var(--lm-purple-muted);
+}
+
+.video-border {
+  border-color: var(--lm-purple-muted);
+}
+
+#news ul {
+  list-style-type: square;
+}
+
+.icon {
+  color: var(--lm-purple);
+}
+
+footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  margin-bottom: 4rem;
+  border-top: 1px solid var(--lm-purple-muted);
+}
+
+img.logo {
+  max-width: 100%;
+}
+
+#contributors p {
+  margin-bottom: 0.5rem;
+}
+
+.suggested-citation {
+  margin-left: 2rem;
+}

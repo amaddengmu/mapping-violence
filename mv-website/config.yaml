@@ -1,0 +1,19 @@
+title: "Mapping Violence in Early Modern Italy, 1450-1750"
+languageCode: "en-us"
+baseURL: "https://sommething.org"
+
+params:
+  tagline: "Insert clever tagline here"
+  description: "Insert description here."
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+disableKinds:
+  - taxonomy
+  - taxonomyTerm
+
+build:
+  noJSConfigInAssets: true
