@@ -12,7 +12,7 @@ env:
   REGISTRY: ghcr.io
   IMAGE_NAME: "ghcr.io/${{ github.repository }}-website"
   CONTEXT_ROOT: "mv-website"
-  DEVL_URL: "https://dev.earlymodernviolence.org/"
+  DEVL_URL: "http://dev.earlymodernviolence.org/"
   PROD_URL: "https://earlymodernviolence.org/"
 
 jobs:
