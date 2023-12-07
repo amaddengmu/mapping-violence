@@ -8,7 +8,6 @@ RUN apk add npm
 WORKDIR /app
 ADD . .
 
-RUN npm install -y
 RUN hugo ${HUGO_BUILD_ARGS}
 
 FROM nginx:1.23-alpine
