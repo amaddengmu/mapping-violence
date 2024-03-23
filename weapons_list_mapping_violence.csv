@@ -1,31 +1,23 @@
-Weapon,Weapon_english,weapon_class_simp
-Archibugio,Blunderbuss,firearm
-Arcibusata,Dragon,firearm
-Arma Di Punta,Flagship Weapon,non-firearm
-Armata Di Taglio Pugnale,Army Cutting Dagger,non-firearm
-Arme Da Punta - Spada Pugnale,Point Arms - Sword Dagger,non-firearm
-Arme Pugnale - Coltello,Arms Dagger - Knife,non-firearm
-Arquebus,Long gun,firearm
-Bastone,Stick,non-firearm
-Bastone Sasso,Stone Stick,non-firearm
-Chiavi Pugnale,Dagger Keys,non-firearm
-Coltello,Knife,non-firearm
-Contendente Bastone,Contender Stick,non-firearm
-Cortellata,Flaying Knife,non-firearm
-Cortello Pugnale,Cortello Dagger,non-firearm
-Martello,Hammer,non-firearm
-Martello Bastone,Hammer Stick,non-firearm
-Mezza Spada Pugnale,Half Sword Dagger,non-firearm
-Piana Di Ferro Bastone,Flat Iron Stick,non-firearm
-Pistole,Pistol,firearm
-Pugnale,Dagger,non-firearm
-"Pugnale, Daghetto","Pugnale, Daghetto",non-firearm
-Pugnale Corto,Short Dagger,non-firearm
-Pugnale Mezz Spada,Dagger Half Sword,non-firearm
-Pungente Pugnale,Stinging Dagger,non-firearm
-Scortichino Pugnale,Flaying Dagger,non-firearm
-Spada Pugnale,Sword Dagger,non-firearm
-Spade E Pugnale,Swords And Dagger,non-firearm
-Stilletto,Stiletto,non-firearm
-Stortino Pugnale,Stortino Dagger,non-firearm
-Veleno,Poison,non-firearm
+Weapon,Weapon_english,weapon_class_simp,description
+Archibugio,Blunderbuss,firearm,The Blunderbuss is a weapon capable of firing shot (multiple small metal pellets) and other projectiles. It is considered a precursor to the modern shotgun.
+Arcibusata,Dragon,firearm,"The Dragon is a handheld blunderbuss traditionally used by mounted soldiers, the root of the word, dragoon."
+Armata Di Taglio Pugnale,Army Cutting Dagger,non-firearm,*
+Arquebus,Long gun,firearm,"The Arquebus is a firearm, specifically a long gun, with a smoothbore capable of firing a single projectile. It was functionally similar to the contemporary musket, although smaller and lighter. "
+Bastone,Stick,non-firearm,N/A
+Sasso,Stone,non-firearm,N/A
+Chiavi Pugnale,Dagger Keys,non-firearm,*
+Coltello,Knife,non-firearm,A handheld-edged tool or utensil with a handle used for utilitarian purposes or combat.
+Contendente Bastone,Contender Stick,non-firearm,*
+Cortello Pugnale,Cortello Dagger,non-firearm,*
+Martello,Hammer,non-firearm,N/A
+Piana Di Ferro Bastone,Flat Iron Stick,non-firearm,*
+Pistole,Pistol,firearm,"A handheld, smooth-bore muzzle-loading firearm capable of firing a single projectile at a time."
+Pugnale,Dagger,non-firearm,A short-bladed-edged weapon designed for thrusting and stabbing.
+Pugnale Corto,Short Dagger,non-firearm,A shorter version of a standard length dagger
+Pungente Pugnale,Stinging Dagger,non-firearm,*
+Scortichino Pugnale,Flaying Dagger,non-firearm,*
+Spade E Pugnale,Swords And Dagger,non-firearm,The combined use of swords and daggers was a common dueling and fighting practice in Early Modern Italy
+Spada,Rapier,non-firearm,"A long, single handed sword with a slender blade designed for thrusting, the model sword for the modern fencing foil."
+Stilletto,Stiletto,non-firearm,A short knife with a narrow blade as wide as its handle designed for thrusting
+Stortino Pugnale,Stortino Dagger,non-firearm,*
+Veleno,Poison,non-firearm,Poisons are chemicals to deadly toxins that can harm humans or other living things.
