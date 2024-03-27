@@ -8,7 +8,6 @@ on:
       - "mv-website/**"
 
 jobs:
-
   hugo-build-release-deploy:
     uses: chnm/.github/.github/workflows/hugo--build-release-deploy.yml@main
     secrets: inherit
@@ -16,13 +15,13 @@ jobs:
       container-registry: "ghcr.io"
       container-image-name: "mv-website"
       hugo-context-root: "."
-      hugo-devl-url: "http://dev.earlymodernviolence.org"
-      hugo-prod-url: "http://dev.earlymodernviolence.org"
+      hugo-devl-url: "https://dev.earlymodernviolence.org"
+      hugo-prod-url: "https://dev.earlymodernviolence.org"
       #hugo-prod-url: "https://earlymodernviolence.org"
-      
+
       build-artifact-name: "mv-website"
       release-tag-name-type: "iso"
-      
+
       website-devl-fqdn: "dev.earlymodernviolence.org"
       website-prod-fqdn: "dev.earlymodernviolence.org"
       #website-prod-fqdn: "earlymodernviolence.org"
