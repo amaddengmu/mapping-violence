@@ -1,8 +1,10 @@
 :root {
-  --lm-purple: rgba(186, 2, 232, 1);
-  --lm-purple-muted: rgba(186, 2, 232, 0.3);
+  --mv-link-color: rgba(186, 2, 232, 1);
+  --mv-link-color-muted: rgba(186, 2, 232, 0.3);
   --bs-body-font-family: "IBM Plex Sans", sans-serif;
-  --bs-link-color: var(--lm-purple);
+  --bs-link-color: var(--mv-link-color);
+  --mv-link-color: #F15025;
+  /*#8789C0; #E3B23C*/
 }
 
 h1.site-title {
@@ -15,9 +17,10 @@ h1.site-title {
   margin-top: 0;
   margin-bottom: 1rem;
   font-weight: 500;
-  color: var(--lm-purple);
+  color: var(--mv-link-color);
   font-size: 1.25rem;
 }
+
 .site-authors {
   margin-bottom: 1rem;
 }
@@ -39,12 +42,12 @@ section {
 
 a,
 a:visited {
-  color: var(--lm-purple);
+  color: var(--mv-link-color);
 }
 
 a:hover,
 a:active {
-  color: var(--lm-purple-muted);
+  color: var(--mv-link-color);
 }
 
 .page-container {
@@ -53,7 +56,7 @@ a:active {
 }
 
 header {
-  border-bottom: 1px solid var(--lm-purple);
+  border-bottom: 1px solid var(--mv-link-color);
   padding-bottom: 2rem;
   margin-bottom: 3rem;
 }
@@ -69,11 +72,11 @@ header p {
 .publication-item .img-thumbnail,
 .publication-item .video-border {
   max-width: 100%;
-  border-color: var(--lm-purple-muted);
+  border-color: var(--mv-link-color);
 }
 
 .video-border {
-  border-color: var(--lm-purple-muted);
+  border-color: var(--mv-link-color);
 }
 
 #news ul {
@@ -81,14 +84,14 @@ header p {
 }
 
 .icon {
-  color: var(--lm-purple);
+  color: var(--mv-link-color);
 }
 
 footer {
   margin-top: 2rem;
   padding-top: 1rem;
   margin-bottom: 4rem;
-  border-top: 1px solid var(--lm-purple-muted);
+  border-top: 1px solid var(--mv-link-color);
 }
 
 img.logo {
