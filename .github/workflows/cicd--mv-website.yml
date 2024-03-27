@@ -15,7 +15,7 @@ jobs:
     with:
       container-registry: "ghcr.io"
       container-image-name: "mv-website"
-      hugo-context-root: "."
+      hugo-context-root: "mv-website"
       hugo-devl-url: "https://dev.earlymodernviolence.org"
       hugo-prod-url: "https://dev.earlymodernviolence.org"
       #hugo-prod-url: "https://earlymodernviolence.org"
