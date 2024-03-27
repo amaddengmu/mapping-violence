@@ -1,5 +1,5 @@
 {{ define "description" }}
-<meta name="description" content="{{ .Site.Params.Description }}">
+<meta name="description" content="{{ .Site.Params.Description }}" />
 
 <meta property="og:title" content="{{ .Site.Title }}" />
 <meta property="og:description" content="{{ .Site.Params.Description }}" />
@@ -14,88 +14,100 @@
 <meta name="twitter:description" content="{{ .Site.Params.Description }}" />
 <meta name="twitter:image" content="{{ .Site.BaseURL }}/img/og-cover.png" />
 <meta name="twitter:url" content="{{ .Site.BaseURL }}" />
-{{ end }}
-
-{{ define "main" }}
-<div id="home-summary">
-	{{ .Content }}
-</div>
+{{ end }} {{ define "main" }}
+<div id="home-summary">{{ .Content }}</div>
 
 <section id="publications">
-	<h2>Data, visualizations, &amp; background</h2>
-
+  <h2>Data, visualizations, &amp; background</h2>
 </section>
 
 <section id=" code">
-	<h3>Source code and datasets</h3>
-	<p>
-		We pledge to make all of our datasets and source code available as free and open-source resources.
-	</p>
+  <h3>Source code and datasets</h3>
+  <p>
+    We pledge to make all of our datasets and source code available as free and
+    open-source resources.
+  </p>
 
-	<p>
-		<i class="icon bi-github"></i> The source code for our ongoing work is available in a <a
-			href="https://github.com/chnm/mapping-violence">GitHub
-			repository.</a>
-	</p>
+  <p>
+    <i class="icon bi-github"></i> The source code for our ongoing work is
+    available in a
+    <a href="https://github.com/chnm/mapping-violence">GitHub repository.</a>
+  </p>
 
-	<p>
-		<i class="icon bi-file-earmark-bar-graph"></i> Our piece on &ldquo;INSERT AWESOME ARTICLE HERE&rdquo;
-		featured a
-		research research foundational to this digital project. The <a
-			href="https://">dataset</a> can
-		be
-		download at the <em>Very Serious Academic Journal</em>.
-	</p>
+  <p>
+    <i class="icon bi-file-earmark-bar-graph"></i> Our piece on &ldquo;INSERT
+    AWESOME ARTICLE HERE&rdquo; featured a research research foundational to
+    this digital project. The <a href="https://">dataset</a> can be download at
+    the <em>Very Serious Academic Journal</em>.
+  </p>
 
-	<p id="field-code-clusters">
-		<i class="icon bi-file-earmark-bar-graph"></i> That article featured clusters of murders and other acts of violence perpetrated in renaissance Italy from YEAR to YEAR. Those <a
-			href="/datasets/DATA GO HERE.zip"> those geocoded incidents of violence</a> can be
-		downloaded from this website. They have been assigned the following DOI: <a
-			href="https://doi.org/SOMETHING">https://doi.org/SOMETHING</a>.
-	</p>
-
+  <p id="field-code-clusters">
+    <i class="icon bi-file-earmark-bar-graph"></i> That article featured
+    clusters of murders and other acts of violence perpetrated in renaissance
+    Italy from YEAR to YEAR. Those
+    <a href="/datasets/DATA GO HERE.zip">
+      those geocoded incidents of violence</a
+    >
+    can be downloaded from this website. They have been assigned the following
+    DOI: <a href="https://doi.org/SOMETHING">https://doi.org/SOMETHING</a>.
+  </p>
 </section>
 
 <section id="news">
-	<h3>Project news</h3>
-	<p><i class="icon bi-rss-fill"></i>
-		<a href="/news/index.xml">Subscribe to our feed</a> for updates on our research.
-	</p>
-	<ul>
-		{{ range (where .Site.RegularPages "Type" "news").ByDate.Reverse }}
-		<li><time datetime='{{ .Date.Format "2006-01-02" }}'>{{ .Date.Format "2 January 2006" }}</time>.
-			{{.Params.News | markdownify }}</li>
-		{{ end }}
-	</ul>
+  <h3>Project news</h3>
+  <p>
+    <i class="icon bi-rss-fill"></i>
+    <a href="/news/index.xml">Subscribe to our feed</a> for updates on our
+    research.
+  </p>
+  <ul>
+    {{ range (where .Site.RegularPages "Type" "news").ByDate.Reverse }}
+    <li>
+      <time datetime='{{ .Date.Format "2006-01-02" }}'
+        >{{ .Date.Format "2 January 2006" }}</time
+      >. <a href=" {{ .Permalink }} ">{{.Params.News | markdownify }}</a>
+    </li>
+    {{ end }}
+  </ul>
 </section>
 
 <section id="contributors">
-	<h3>Contributors</h3>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md">
-				<p>Amanda Madden, lead researcher, Roy Rosenzweig Center for History and New Media</p>
-				<p>Colin Rose, , Co-PI, Brock University, Canada</p>
-				<p>Brandan P. Buck, GIS Consultant, Roy Rosenzweig Center for History and New Media</p>
-			</div>
-			<div class="col-md">
-				<p>FIRST NAME, LAST NAME, POSITION, INSTITUTION</p>
-				<p>FIRST NAME, LAST NAME, POSITION, INSTITUTION</p>
-				<p>FIRST NAME, LAST NAME, POSITION, INSTITUTION</p>
-			</div>
-		</div>
-	</div>
+  <h3>Contributors</h3>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md">
+        <p>
+          Amanda Madden, lead researcher, Roy Rosenzweig Center for History and
+          New Media
+        </p>
+        <p>Colin Rose, , Co-PI, Brock University, Canada</p>
+        <p>
+          Brandan P. Buck, GIS Consultant, Roy Rosenzweig Center for History and
+          New Media
+        </p>
+      </div>
+      <div class="col-md">
+        <p>
+          Jason A. Heppler, senior developer, Roy Rosenzweig Center for History
+          and New Media
+        </p>
+        <p>FIRST NAME, LAST NAME, POSITION, INSTITUTION</p>
+        <p>FIRST NAME, LAST NAME, POSITION, INSTITUTION</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="citation">
-	<h3>Suggested citation</h3>
-	<p>
-		We recommend the following citation if you would like to cite this project:
-	</p>
-	<blockquote class="suggested-citation">
-		Amanda Madden, <em>Mapping Violence in Early Modern Italy, 1450-1750</em>, Roy Rosenzweig Center for History and New Media
-		(2022&ndash;): <a href="https://link">https://link</a>.
-	</blockquote>
+  <h3>Suggested citation</h3>
+  <p>
+    We recommend the following citation if you would like to cite this project:
+  </p>
+  <blockquote class="suggested-citation">
+    Amanda Madden, <em>Mapping Violence in Early Modern Italy, 1450-1750</em>,
+    Roy Rosenzweig Center for History and New Media (2024&ndash;):
+    <a href="https://link">https://link</a>.
+  </blockquote>
 </section>
 
 {{ end }}

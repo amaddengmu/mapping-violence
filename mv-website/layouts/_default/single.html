@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<div class="main">
+  <article id="{{ urlize .Title }}" class="h-entry post post-body">
+    <h1 class="title">{{ .Title }}</h1>
+    <p class="lead">{{ .Params.news }}</p>
+
+    <div class="content">{{ .Content }}</div>
+
+    <div class="meta">
+      Posted on <time class="dt-published" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time> by {{ .Params.author }}.
+    </div>
+  </article>
+</div>
+
+{{ end }}
