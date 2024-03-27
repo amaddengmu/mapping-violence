@@ -1,6 +1,6 @@
 title: "Mapping Violence in Early Modern Italy, 1450-1750"
 languageCode: "en-us"
-baseURL: "https://mappingearlymodernviolence.org"
+baseURL: "https://earlymodernviolence.org"
 
 params:
   tagline: "Insert clever tagline here"
