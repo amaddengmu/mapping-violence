@@ -15,6 +15,17 @@
 <meta name="twitter:image" content="{{ .Site.BaseURL }}/img/og-cover.png" />
 <meta name="twitter:url" content="{{ .Site.BaseURL }}" />
 {{ end }} {{ define "main" }}
+
+<section class="hero-image">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <img src="/img/website_image.jpg" class="img-fluid" alt="Website main image">
+      </div>
+    </div>
+  </div>
+</section>
+
 <div id="home-summary">{{ .Content }}</div>
 
 <section id="publications">
