@@ -7,10 +7,16 @@ This repository contains code, documentation, and related resources for the Mapp
 ## Project Team and Collaborators
 
 - Dr. Amanda Madden (PI)
+- Dr. Colin Rose (Co-PI)
+- Dr. Rachel Midura (Co-PI)
+- Dr. Andrew Vidali (Co-PI)
 - Dr. Jason Heppler (senior developer)
-- Brandan Buck
+  
+
 
 ### Past Contributors
+- Alexandra Miller (PhD Student, GMU)
+- Dr. Brandan Buck
 - James Ball
 - Ethan Haarer
 - Owen Huggins
