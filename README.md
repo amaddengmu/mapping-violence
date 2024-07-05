@@ -8,6 +8,9 @@ This repository contains code, documentation, and related resources for the Mapp
 
 - Dr. Amanda Madden (PI)
 - Dr. Jason Heppler (senior developer)
+- Dr. Rachel Midura (Co-PI)
+- Dr. Colin Rose (Co-PI)
+- Dr. Andrew Vidali (Co-PI)
 - Brandan Buck
 
 ### Past Contributors
