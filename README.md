@@ -11,9 +11,10 @@ This repository contains code, documentation, and related resources for the Mapp
 - Dr. Rachel Midura (Co-PI)
 - Dr. Colin Rose (Co-PI)
 - Dr. Andrew Vidali (Co-PI)
-- Brandan Buck
 
 ### Past Contributors
+- Dr. Brandan Buck
+- Alexandra Miller (PhD student, GMU)
 - James Ball
 - Ethan Haarer
 - Owen Huggins
